@@ -10,13 +10,10 @@ export const Demo = () => {
 
 	return (
 		<div className="container">
-			<ul className="list-group">
+			<div className="card-deck p-5 m-5 ">
 				{store.demo.map((item, index) => {
 					return (
-						<li
-							key={index}
-							className="list-group-item d-flex justify-content-between"
-							style={{ background: item.background }}>
+						<div key={index} className="card" style={{ backgroundImage: "url(" + item.image + ")"}}>
 							<Link to={"/single/" + index}>
 								<span>Link to: {item.title}</span>
 							</Link>
@@ -27,13 +24,13 @@ export const Demo = () => {
 									Check store/flux.js scroll to the actions to see the code
 								</p>
 							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
+							<button className="btn btn-dark" onClick={() => actions.changeColor(index, "orange")}>
 								Change Color
 							</button>
-						</li>
+						</div>
 					);
 				})}
-			</ul>
+			</div>
 			<br />
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
