@@ -5,8 +5,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					title: "FIRST",
 					background: "white",
-					initial: "white"
-                    image: 'https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fhiddenremote.com%2Ffiles%2F2015%2F10%2Frobot-chicken.jpg&w=736&h=485&c=sc"
+					initial: "white",
+					image:
+						"https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fhiddenremote.com%2Ffiles%2F2015%2F10%2Frobot-chicken.jpg&w=736&h=485&c=sc"
 				},
 				{
 					title: "SECOND",
