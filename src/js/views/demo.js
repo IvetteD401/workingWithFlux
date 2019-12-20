@@ -15,7 +15,7 @@ export const Demo = () => {
 					return (
 						<div
 							key={index}
-							className="card p-5 m-5"
+							className="card col -3 demoCard p-5 m-5"
 							style={{ backgroundImage: "url(" + item.image + ")" }}>
 							<Link to={"/single/" + index}>
 								<span>Link to: {item.title}</span>

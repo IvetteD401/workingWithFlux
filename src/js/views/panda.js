@@ -10,30 +10,7 @@ export const Panda = () => {
 
 	return (
 		<div className="container">
-			<div className="card-deck">
-				{store.demo.map((item, index) => {
-					return (
-						<div
-							key={index}
-							className="card p-5 m-5"
-							style={{ backgroundImage: "url(" + item.image + ")" }}>
-							<Link to={"/single/" + index}>
-								<span>Link to: {item.title}</span>
-							</Link>
-							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-							<button className="btn btn-dark" onClick={() => actions.changeColor(index, "orange")}>
-								Change Color
-							</button>
-						</div>
-					);
-				})}
-			</div>
+			<div> PaNDUHHHHHHHHH</div>
 			<br />
 			<Link to="/">
 				<button className="btn btn-primary">Back home</button>
